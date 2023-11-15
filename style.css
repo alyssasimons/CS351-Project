@@ -154,6 +154,12 @@ header {
     }
 }
 
+@media(max-width: 992px) {
+    .landingpage {
+        width: 300vh;
+    }
+}
+
 footer {
     background-color: #CCCCCC;
     text-align: center;

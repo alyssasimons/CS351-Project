@@ -154,9 +154,9 @@ header {
     }
 }
 
-@media(max-width: 992px) {
+@media(max-width: 1200px) {
     .landingpage {
-        width: 300vh;
+        width: 400vh;
     }
 }
 

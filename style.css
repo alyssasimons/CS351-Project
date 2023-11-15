@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-size: 30px;
+}
+
+.landingpage {
+    height: 100vh;
+    width: 200vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(https://img.freepik.com/free-photo/glasses-eye-chart-white-background_1387-378.jpg);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+
+.logo {
+    font-size: 40px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: 800;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: whitesmoke;
+    transition: .3s;
+}
+
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.main {
+    width: 90%;
+    color: white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 62px;
+    text-transform: uppercase;
+    text-decoration: solid;
+
+}
+
+.main p {
+    margin: 15px 0 30px;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.main-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background-color:darkslategray;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.about {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.about > h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about p {
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.about img {
+    width: 80%;
+    padding-bottom: 50px;
+}
+
+.row {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lens-col {
+    flex-basis: 31%;
+    background: rgb(208, 203, 203);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.lens-col h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@media(max-width: 768px) {
+    .main{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 576px) {
+    .row {
+        display: block;
+    }
+}
+
+footer {
+    background-color: #CCCCCC;
+    text-align: center;
+}
+
+footer > p {
+    padding: 60px;
+}
+
+.app {
+    background: white;
+    border: 1px solid black;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.app h1 {
+    font-weight: 25px;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#next-btn {
+    background: gray;
+    color: black;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background-color:darkslategray;
+    position: relative;
+    cursor: pointer;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.btn:hover:not([disabled]){
+    background: #222;
+    color: #fff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+.correct {
+    background: green;
+}
+
+.incorrect {
+    background: red;
+}

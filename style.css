@@ -154,11 +154,6 @@ header {
     }
 }
 
-@media(max-width: 1200px) {
-    .landingpage {
-        width: 400vh;
-    }
-}
 
 footer {
     background-color: #CCCCCC;
